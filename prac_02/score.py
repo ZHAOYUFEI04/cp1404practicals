@@ -30,7 +30,7 @@ def main():
     result = determine_result(user_score)
     print(f"Your result:{result}")
 
-    # Generate ranndom score
+    # Generate random score
     random_score = random.randint(0,101)
     print(f"Random score:{random_score}")
     random_result = determine_result(random_score)

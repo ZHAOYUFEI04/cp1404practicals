@@ -27,7 +27,3 @@ if __name__ == '__main__':
 
 
 
-# enter_number = int(input("How many quick picks? "))
-# for line in range(enter_number):
-#     print(line)
-#     random.randint(1, 45)

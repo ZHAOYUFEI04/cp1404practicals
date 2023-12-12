@@ -1,4 +1,10 @@
+"""
+Project Management Program
+Estimate: 50 minutes
+Actual:   52 minutes
+"""
 from project import Project
+import datetime
 
 def load_projects(file_name):
     projects = []
@@ -39,6 +45,7 @@ def filter_projects_by_date(projects):
         print(f"  {project}")
 
 def add_new_project(projects):
+    print("Let's add a new project")
     name = input("Name: ")
     start_date = input("Start date (dd/mm/yyyy): ")
     priority = input("Priority: ")
@@ -53,10 +60,12 @@ def update_project(projects):
         print(f"{i} {project}")
     choice = int(input("Project choice: "))
     selected_project = projects[choice]
+    print(selected_project)
 
     percent_complete = input("New Percentage: ")
     priority = input("New Priority: ")
     selected_project.update_project(percent_complete, priority)
+
 
 if __name__ == "__main__":
     file_name = "projects.txt"

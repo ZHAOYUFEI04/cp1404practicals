@@ -2,7 +2,7 @@
 CP1404/CP5632 Practical
 Kivy GUI program to square a number
 Zhao Yufei, IT@JCU
-Started 13/10/2015
+Started 20/12/2023
 """
 
 from kivy.app import App

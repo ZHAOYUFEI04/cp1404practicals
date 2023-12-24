@@ -11,7 +11,6 @@ from kivy.core.window import Window
 
 __author__ = 'Zhao Yufei'
 
-
 class SquareNumberApp(App):
     """ SquareNumberApp is a Kivy App for squaring a number """
     def build(self):

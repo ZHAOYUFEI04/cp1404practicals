@@ -17,8 +17,4 @@ class DynamicLabelsApp(App):
 
 if __name__ == '__main__':
     DynamicLabelsApp().run()
-<<<<<<< HEAD
 
-
-=======
->>>>>>> origin/master

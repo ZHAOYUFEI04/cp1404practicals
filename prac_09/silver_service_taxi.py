@@ -1,11 +1,10 @@
 from prac_09.taxi import Taxi
 class SilverServiceTaxi(Taxi):
     flagfall = 4.50    # Extra charge for each new fare
-    def __init__(self, name, fuel, price_per_km, fanciness):
-        super().__init__(name, fuel, price_per_km)
-        self.price_per_km *= fanciness
+    def __init__(self, name, fuel, fanciness):
+        super().__init__(name, fuel)
         self.fanciness = fanciness
-
+        self.price_per_km *= fanciness
 
     def get_fare(self):
         """Return the price for the taxi trip."""

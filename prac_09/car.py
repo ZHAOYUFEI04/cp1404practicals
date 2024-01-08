@@ -5,7 +5,6 @@ Estimate: 30 minutes
 Actual:   32 minutes
 """
 
-
 class Car:
     """Represent a Car object."""
 

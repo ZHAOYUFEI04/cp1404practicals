@@ -8,7 +8,8 @@ class SilverServiceTaxi(Taxi):
 
     def get_fare(self):
         """Return the price for the taxi trip."""
-        return super().get_fare() + self.flagfall
+        total_fare = super().get_fare() + self.flagfall
+        return round(total_fare, 1)
     def __str__(self):
         return f"{super().__str__()} plus flagfall of ${self.flagfall:.2f}"
 

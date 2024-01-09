@@ -38,8 +38,8 @@ def main():
             else:
                 try:
                     distance = float(input("Drive how far? "))
+                    current_taxi.start_fare()  # Reset fare distance
                     current_taxi.drive(distance)
-                    # current_taxi.start_fare()  # Reset fare distance
                     cost = current_taxi.get_fare()
                     # cost = current_taxi.drive(distance)
                     bill_to_date += cost

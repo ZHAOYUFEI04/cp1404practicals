@@ -71,3 +71,19 @@ doctest.testmod()
 # and one more you decide (one that is valid!)
 # test this and watch the tests fail
 # then write the body of the function so that the tests pass
+def format_as_sentence(phrase):
+    """
+    >>> format_as_sentence('hello')
+    'Hello.'
+    >>> format_as_sentence('It is an ex parrot.')
+    'It is an ex parrot.'
+    >>> format_as_sentence('one more test')  # you decide (one that is valid!)
+    'One more test.'
+    """
+    return phrase.capitalize() + '.'
+
+# Testing the format_as_sentence function
+assert format_as_sentence('hello') == 'Hello.'
+assert format_as_sentence('It is an ex parrot.') == 'It is an ex parrot.'
+assert format_as_sentence('one more test') == 'One more test.'
+
